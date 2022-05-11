@@ -144,11 +144,12 @@ img {
 
 .contacts.list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
 .contact-list-item {
-  display: flex;
+  align-items: center;
   margin-right: 50px;
 
   color: currentColor;
@@ -163,9 +164,14 @@ img {
   margin-right: 0;
 }
 
-.icon-mail {
+.header .contact-list-item.link {
+  display: flex;
+}
+
+.icon-contact {
   outline: 2px solid tomato;
   fill: currentColor;
+  margin-right: 10px;
 }
 
 /* main Студия */
