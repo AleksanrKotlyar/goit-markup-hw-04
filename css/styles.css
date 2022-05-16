@@ -58,6 +58,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .list,
@@ -271,10 +272,9 @@ img {
 }
 
 .icon-feature-item {
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   height: 120px;
 
@@ -605,15 +605,20 @@ img {
 }
 
 .gallary-list-item {
-  max-width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 
   background: #ffffff;
 }
 
-.gallary-list-item:hover,
-.gallary-list-item:focus {
+.gallary-list-item.link {
+  display: inline-block;
+  width: 100%;
+}
+
+.gallary-list-item.link:hover,
+.gallary-list-item.link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
